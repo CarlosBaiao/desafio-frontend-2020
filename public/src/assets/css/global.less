@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'SourceSansRegular' ;
+    src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansBlack' ;
+    src: url('../fonts/SourceSansPro-Black.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansBold' ;
+    src: url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'SourceSansRegular' , 'sans-serif';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    min-height: 100%;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-transform: none;
+}
+
+button, input, select, textarea {
+    font-family: 'SourceSansRegular' , 'sans-serif';
+}
+
+
+
+
+input {
+    height: 47px;
+    border: 1px solid @grey;
+    color: @dark-grey;
+    padding: 0 15px;
+
+    &.error {
+        border: 1px solid @red;
+    }
+}
